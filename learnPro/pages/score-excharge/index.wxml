@@ -1,0 +1,15 @@
+<!--pages/score-excharge/index.wxml-->
+<view class="container">
+  <form bindsubmit="bindSave">
+    <view class="form-box">
+      <view class="row-wrap">
+        <view class="label">券号</view>
+        <view class="label-right">
+          <input type='text' class="input" placeholder="请输入券号" name="amount" />
+        </view>
+      </view> 
+    </view>
+     <button type="warn" class="saveBtn" formType="submit">立即兑换</button>
+     <button type="default" class="cancelBtn" bindtap="cancelBtnTap">取消</button>
+  </form>
+</view>

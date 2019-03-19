@@ -1,0 +1,52 @@
+/* pages/recharge/index.wxss */
+page{
+  height: 100%;
+  background-color: #f5f5f9;
+}
+.container{
+  justify-content: initial;
+}
+
+.form-box{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.row-warp{
+  display: flex;
+  font-size: 28rpx;
+  width: 720rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+}
+
+.row-warp label{
+  width: 160rpx;
+  color: #000;
+}
+
+.row-warp .label-right{
+  flex: 1;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.row-warp .label-right input{
+  height: 100%;
+  font-size: 28rpx;
+  padding-left: 30rpx;
+}
+
+.save-btn,
+.cancel-btn{
+  width: 690rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+}
+

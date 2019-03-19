@@ -1,0 +1,38 @@
+/* pages/authorize/index.wxss */
+
+/**
+  justify-content:定义在主轴方向的对其方式:
+  1.flex-start（默认值）：左对齐；
+  2.flex-end：右对齐；
+  3.center：居中；
+  4.space-between：两端对齐，项目之间间隔相等；
+  5.space-around：每个项目两侧的间隔相等，即项目之间的间隔比项目与边框的间隔大一倍。
+  border-box: 告诉浏览器去理解你设置的边框和内边距的值是包含在width内的。也就是说，如果你将一个元素的width设为100px,那么这100px会包含其它的border和padding，内容区的实际宽度会是width减去border + padding的计算值。大多数情况下这使得我们更容易的去设定一个元素的宽高。
+*/
+page{
+  height: 100%;
+}
+
+.container{
+  background-color: #f5f5f9;
+  justify-content: flex-start; 
+  padding: 0;
+}
+
+form{
+  width: 100%;
+  background-color:#fff;
+  margin-top: 20rpx;
+}
+
+.save-btn{
+  width: 690rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  background-color: #e64340;
+  color:#fff;
+}

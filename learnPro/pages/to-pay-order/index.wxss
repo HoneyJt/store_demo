@@ -1,0 +1,225 @@
+/* pages/to-pay-order/index.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.container{
+  padding-bottom: 100rpx;
+}
+
+form{
+  width: 100%;
+}
+
+/*收货地址*/
+.address-box{
+  width: 100%;
+  background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 705rpx center,
+              url(https://cdn.it120.cc/images/weappshop/addr-line.png) no-repeat center bottom;
+  background-size: 16rpx auto,750rpx auto;
+  background-color: #fff;
+  margin: 20rpx 0;
+
+}
+
+.add-address{
+  width: 100%;
+}
+
+.add-address .title{
+  font-size: 28rpx;
+  color: #000;
+  margin-left: 30rpx;
+  background: url(https://cdn.it120.cc/images/weappshop/ico-add-addr.png) no-repeat left center;
+  background-size: 60rpx auto;
+  padding: 40rpx 0 40rpx 90rpx;
+}
+
+.show-address{
+  width: 664rpx;
+  box-sizing: border-box;
+  padding-left: 100rpx;
+  background: url(https://cdn.it120.cc/images/weappshop/ico-addr.png) no-repeat 30rpx 35rpx;
+  background-size: 30rpx;
+}
+
+.name-tel{
+  font-size: 28rpx;
+  color: #000;
+  padding: 30rpx 0 20rpx 0;
+}
+
+.addr-text{
+  font-size: 24rpx;
+  color: #888;
+  padding-bottom: 34rpx;
+  line-height: 36rpx;
+}
+
+.goods-list{
+  background-color: #fff;
+  margin: 20rpx 0;
+  width: 100%;
+}
+
+.list-title{
+  /*上右下左*/
+  padding: 30rpx 0  25rpx 30rpx;
+  font-size: 28rpx;
+  color: #000;
+}
+
+.a-goods{
+  display: flex;
+  width: 720rpx;
+  margin-left: 30rpx;
+  border-top: 1rpx solid #eee;
+  /* justify-content: space-between; */
+  padding: 30rpx 30rpx 30rpx 0;
+}
+
+.img-box{
+  width: 160rpx;
+  height: 160rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+  background-color: #d8d8d8;
+}
+
+.img-box .img{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.text-box{
+  padding-top: 10rpx;
+  box-sizing: border-box;
+  width: 510rpx;
+}
+
+.arow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods-name{
+  width: 360rpx;
+  font-size: 26rpx;
+  height: 74rpx;
+  color: #000;
+  line-height: 1.6;
+  overflow: hidden;
+}
+
+.goods-price{
+  font-size: 26rpx;
+  color: #000;
+  align-self: flex-start;
+}
+
+.arow1{
+  margin-bottom: 30rpx;
+}
+
+.arow .goods-label{
+  font-size: 26rpx;
+  color: #999;
+}
+
+.arow .goods-num{
+  font-size: 26rpx;
+  color: #999;
+}
+
+.peisong-way{
+  margin-top: 20rpx;
+  background-color: #fff;
+  width: 100%;
+}
+
+.row-box{
+  width: 720rpx;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 24rpx 0 24rpx 30rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.row-label{
+  color: #000;
+}
+
+.right-text{
+  color: #666;
+  padding-right: 30rpx;
+}
+
+.liuyan{
+  width: 510rpx;
+}
+
+.goods-info{
+  background-color: #fff;
+  margin-bottom: 120rpx;
+  /* padding-bottom: 24rpx; */
+  width: 100%;
+}
+
+.goods-info .row-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 24rpx 30rpx 24rpx 30rpx;
+    font-size: 28rpx;
+    color: #000;
+}
+.goods-info .row-box .right-text{
+    text-align: right;
+    color: #000;
+}
+
+.jiesuan-box{
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 100rpx;
+  border-top: 1rpx solid #eee;
+  z-index: 999;
+  justify-content: space-between;
+}
+
+.left-price{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 30rpx 0 0;
+  font-size:28rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 500rpx;
+}
+
+.total{
+  color: #e64340;
+  text-align: right;
+}
+
+.to-pay-btn{
+  position: absolute;
+  background-color: #e64340;
+  color: #fff;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 100rpx;
+  right: 0;
+  height: 100rpx;
+  width: 250rpx;
+  border-radius: 0;
+}

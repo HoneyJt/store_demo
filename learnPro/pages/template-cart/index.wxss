@@ -1,0 +1,245 @@
+/* pages/template-cart/index.wxss */
+
+.container{
+    justify-content:initial;
+}
+
+.title-box{
+  width: 100%;
+  margin-top: 330rpx;
+  text-align: center;
+  color: #999;
+  background: url(https://cdn.it120.cc/images/weappshop/icon-cart.png) no-repeat center 205rpx;
+  background-size: 100rpx auto;
+  font-size: 28rpx;
+  margin-bottom: 50rpx;
+}
+
+.to-index-btn{
+  color: #fff;
+  font-size: 28rpx;
+  background-color: #E1483E;
+  text-align: center;
+  width: 300rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 6rpx;
+  margin: 0 auto;
+}
+
+.list-top{
+  display: flex;
+  justify-content: space-between;
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  align-items: center;
+}
+
+.list-top label{
+   color: #000;
+}
+
+.edit-btn{
+  color: #999;
+  height: 100%;
+}
+
+.goodsList{
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 100rpx;
+}
+
+.a-goods{
+  width: 100%;
+  overflow: hidden;
+}
+
+.a-goods-conts{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30rpx;
+  width: 870rpx;
+  box-sizing: border-box;
+  transition: margin-left 0.2s ease-in-out;
+  background: url(https://cdn.it120.cc/images/weappshop/gou.png) no-repeat 30rpx center;
+  background-size: 40rpx auto;
+}
+.a-goods-conts.active{
+  background: url(https://cdn.it120.cc/images/weappshop/gou-red.png) no-repeat 30rpx center;
+  background-size: 40rpx auto; 
+}
+
+.goods-info{
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0 30rpx 70rpx;
+  width: 720rpx;
+  box-sizing: border-box;
+}
+
+.img-box{
+  width: 160rpx;
+  height: 160rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+  background-color: #d8d8d8;
+}
+
+.img-box .img{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.text-box{
+  color: #000;
+  font-size: 28rpx;
+  position: relative;
+  width: 440rpx;
+}
+
+.goods-title{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10rpx 20rpx 5rpx 0;
+}
+
+.goods-label{
+  font-size: 26rpx;
+  color: #999;
+  height: 38rpx;
+  line-height: 38rpx;
+  margin: 8rpx 0 25rpx 0;
+}
+
+.goods-price{
+  font-size: 26rpx;
+  color:#e64340;
+}
+
+.buy-num{
+  display: flex;
+  width: 164rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  right: 30rpx;
+  bottom: 0;
+  position: absolute;
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.buy-num .jian-btn{
+  width: 48rpx;
+  height: 100%;
+  border-left: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+  border-bottom-left-radius: 6rpx;
+  border-top-left-radius: 6rpx;
+}
+
+.buy-num .jian-btn.disabled{
+  background-color: #f5f5f9;
+  border-left: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  border-top: 1rpx solid #eee;
+  color: #ccc;
+}
+
+.buy-num .jia-btn{
+  width: 48rpx;
+  height: 100%;
+  border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+  border-bottom-right-radius: 6rpx;
+  border-top-left-radius: 6rpx;
+}
+
+.buy-num .jia-btn.disabled{
+  background-color: #f5f5f9;
+  border-right: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;    
+  border-top: 1rpx solid #eee;
+  color: #ccc;
+}
+
+.buy-num input{
+  width: 68rpx;
+  height: 100%;
+  min-height: 48rpx;
+  text-align: center;
+  font-size: 24rpx;
+  border: 1rpx solid #ccc;
+}
+
+.delete-btn{
+  width: 120rpx;
+  line-height: 220rpx;
+  text-align: center;
+  background: #e64340;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+/*底部布局*/
+.jiesuan-box{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30rpx;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  height: 100rpx;
+  width: 100%;
+  z-index: 999;
+}
+
+.to-pay-btn{
+  width: 240rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #e64340;
+  color: #fff;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.to-pay-btn.no-select{
+    background-color: #ccc;
+}
+
+.left-price{
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+  justify-content: space-between;
+  width: 510rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx 0 0;
+}
+
+.all-selected{
+  padding-left: 90rpx;
+  color:#000000;
+  background: url(https://cdn.it120.cc/images/weappshop/gou.png) no-repeat 30rpx center;
+  background-size: 40rpx auto;
+}
+
+.all-selected.active{
+  background: url(https://cdn.it120.cc/images/weappshop/gou-red.png) no-repeat 30rpx center;
+  background-size: 40rpx auto; 
+}
+
+.total{
+  color: #e64340;
+}
+

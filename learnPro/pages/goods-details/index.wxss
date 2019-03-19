@@ -1,0 +1,398 @@
+/* pages/goods-details/index.wxss */
+
+/*
+flex-direction:
+1.row	默认值。灵活的项目将水平显示，正如一个行一样。
+2.row-reverse	与 row 相同，但是以相反的顺序。
+3.column	灵活的项目将垂直显示，正如一个列一样。
+4.column-reverse	与 column 相同，但是以相反的顺序。
+*/
+
+@import "/wxParse/wxParse.wxss";
+.container{
+  background-color: #F2F2F2;
+  min-height: 100%;
+  padding-bottom: 100rpx;
+}
+
+/*head头部视图*/
+.swiper-container{
+  width: 100%;
+  position: relative;
+}
+
+.swiper_box{
+  width: 100%;
+  height: 748rpx;
+}
+
+swiper-item image{
+  width: 100%;
+  height: 748rpx;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.swiper-container .dots{
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  justify-content: center;
+  display: flex;
+}
+
+.swiper-container .dots .dot{
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background: #000;
+  border-radius: 50%;
+  transition: all .6s;
+  opacity: .3;
+}
+
+.swiper-container .dots .dot.active{
+  opacity: 1;
+  background-color: coral;
+}
+
+/*商品信息布局*/
+.goods-info{
+  background: #fff;
+  padding:35rpx 0;
+  margin-bottom: 24rpx;
+  width: 100%;
+  position: relative;
+}
+
+.goods-title{
+  box-sizing: border-box;
+   font-size: 32rpx;
+   padding: 0 35rpx;
+   line-height: 1.4;
+   color: #000;
+   margin-bottom: 28rpx;
+   padding-right: 60rpx;
+}
+
+.goods-share{
+  color: #CC0000;
+  margin: 10rpx 0rpx;
+  font-size: 25rpx;
+  padding: 0 35rpx;
+  line-height: 1.4;
+  margin-bottom: 28rpx;
+}
+
+.goods-price{
+  color: #D33E37;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  width: 30%;
+  font-weight: bold;
+  float:left;
+}
+
+.goods-info-fx{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 60px;
+}
+
+.goods-info-fx image{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 10px 10px 0 5px;
+  z-index: 1;
+}
+
+.goods-info-fx button{
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 60px;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.goods-info-fx text{
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  font-size: 10px;
+  z-index: 1;
+  text-align: center;
+}
+
+/*
+去砍价 1.clip	修剪文本。	测试
+      2.ellipsis	显示省略符号来代表被修剪的文本。
+*/
+.row-arrow{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 120rpx 0 35rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 102rpx;
+  font-size: 28rpx;
+  line-height: 102rpx;
+  margin-bottom: 28rpx;
+  background: #fff url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 697rpx center;
+  background-size: 18rpx auto;
+}
+
+/*商品介绍*/
+.goods-des-info{
+  /*边框也算进宽高里面*/
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+}
+
+.label-title{
+  font-size: 28rpx;
+  color: #000;
+  padding: 30rpx;
+}
+
+.goods-text{
+  padding: 0 10rpx;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 56rpx;
+  margin-bottom: 30rpx;
+}
+
+/*底部视图布局*/
+.footer-box{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 8rpx 0;
+}
+
+.contact{
+  position: relative;
+   width: 120rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20rpx;
+  color: #008000;
+  box-sizing: border-box;
+  background: url("https://cdn.it120.cc/images/weappshop/kefu.png") no-repeat center 21rpx;
+  background-size: 55rpx auto;
+}
+
+.shop-cart-btn{
+  position: relative;
+  width: 135rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #acacb7;
+  background: url('https://cdn.it120.cc/images/weappshop/cart.png') no-repeat center 21rpx;
+  box-sizing: border-box;
+  font-size: 20rpx;
+  background-size: 44rpx auto;
+}
+
+.shop-num{
+  position: absolute;
+  float: right;
+  top: 10rpx;
+  right: 18rpx;
+  color: #E97C76;
+}
+
+.join-shop-cart{
+  background-color: #FA6B4C;
+  font-size: 34rpx;
+  text-align: center;
+  width: 250rpx;
+  height: 100%;
+  color: #fff;
+  line-height: 100rpx;
+}
+
+.now-buy{
+  background-color: #E1483E;
+  font-size: 34rpx;
+  text-align: center;
+  width: 250rpx;
+  height: 100%;
+  color: #fff;
+  line-height: 100rpx;
+}
+
+/*购买数量等确认*/
+.show-popup{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 4;
+}
+
+.popup-mask{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5
+}
+
+.popup-contents{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 6;
+}
+
+.pop-goods-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30rpx;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pop-img-box{
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  margin-right: 26rpx;
+}
+
+.pop-img-box .goods-thumbnail{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.pop-goods-title{
+  width: 484rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 26rpx;
+  color: #000;
+}
+
+.pop-goods-price{
+  font-size: 26rpx;
+  color: #e64340;
+  margin-top: 20rpx;
+}
+
+.pop-goods-close{
+  width: 36rpx;
+  height: 36rpx;
+  flex: 1;
+  background: url("https://cdn.it120.cc/images/weappshop/popup-close.png") no-repeat center center;
+  background-size: 36rpx auto;
+  align-self: flex-start;
+  margin-top: -10rpx;
+}
+
+.size-label-box .label{
+ font-size: 26rpx;
+ color: #000;
+ padding-left: 30rpx;
+ padding: 30rpx 0 20rpx 30rpx;
+}
+
+.label-item-box{
+  display: flex;
+  margin-left: 30rpx;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.label-item{
+  border: 1px solid #ddd;
+  padding: 14rpx 20rpx;
+  border-radius: 6rpx;
+  font-size: 26rpx;
+  margin: 0 20rpx 20rpx 0;
+}
+
+.label-item-box .active{
+  color: #e64340;
+  border: 1px solid #e64340;
+}
+
+.buy-num-box{
+  margin-top: 30rpx;
+  border-top: 1px solid #eee;
+  justify-content: space-between;
+  display: flex;
+  margin-left: 30rpx;
+  padding: 30rpx 30rpx 48rpx 0;
+  align-items: center;
+}
+
+.num-label{
+  font-size: 26rpx;
+  color: #000;
+}
+
+.num-box{
+  display: flex;
+}
+
+.num-jian,
+.num-input,
+.num-jia{
+   width: 80rpx;
+   height: 64rpx;
+   line-height: 62rpx;
+   text-align: center;
+   border:1px solid #eee;
+} 
+
+.num-input{
+  font-size: 28rpx;
+}
+
+.num-input input{
+  height: 100%;
+}
+
+.popup-join-btn{
+  width: 100%;
+  height: 89rpx;
+  text-align: center;
+  line-height: 89rpx;
+  font-size:34rpx;
+  color:#ffffff;
+  background-color: #e64340;
+}
+.buy-num-box .num-box .hui{
+  background-color: #f5f5f9;
+}
+
+
+
+

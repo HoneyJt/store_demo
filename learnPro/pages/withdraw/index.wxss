@@ -1,0 +1,54 @@
+/* pages/withdraw/index.wxss */
+page{
+   height: 100%;
+  background-color: #f5f5f9;
+}
+
+.form-box{
+  margin-top: 20rpx;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+.row-warp{
+  display: flex;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  width: 720rpx;
+}
+
+.label{
+  width: 160rpx;
+  color: #000;
+}
+
+/* flex: 1; 相当于 flex-grow:1 flex-shrink:1 flex-basis:0%
+   flex-grow: 1 就是索取父容器的剩余空间
+   flex-shrink:1 当子容器的比例超过父容器 各个子容器按照1：1比例压缩
+   flex-basis:auto 根据内容分配多大空间
+ */
+
+.label-right{
+  flex: 1;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.label-right input{
+  height: 100%;
+  /* padding-left: 30rpx; */
+  padding-right: 30rpx;
+}
+
+.saveBtn,
+.cancelBtn{
+  margin-top: 20rpx;
+  height: 80rpx;
+  border-radius: 6rpx;
+  width: 690rpx;
+  text-align: center;
+  line-height: 80rpx;
+}

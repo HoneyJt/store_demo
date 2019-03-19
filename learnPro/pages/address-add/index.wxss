@@ -1,0 +1,84 @@
+/* pages/address-add/index.wxss */
+page{
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  background-color: #f5f5f9;
+  width: 100%;
+  justify-content: initial;
+}
+
+form{
+  width: 100%;
+}
+
+.form-box{
+  width: 100%;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.row-wrap{
+  width: 720rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  font-size: 28rpx;
+}
+
+.label{
+  width: 160rpx;
+  color: #000;
+}
+
+.row-wrap .label-right{
+  flex: 1;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.row-wrap .label-right input{
+  height: 100%;
+  font-size: 28rpx;
+  padding-right: 30rpx;
+}
+
+picker{
+  min-width: 20rpx;
+  height: 100%;
+  margin-right: 20rpx;
+} 
+
+.hui{
+  color: #666;
+}
+
+.addr-details{
+  height: auto;
+  display: flex;
+  font-size: 28rpx;
+  padding: 30rpx 0;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.addr-details .label{
+  margin: auto 0 auto 0;
+  width: 160rpx;
+  color: #000;
+}
+
+.addr-details textarea{
+  box-sizing: border-box;
+  width: 480rpx;
+  overflow: scroll;
+}
+
+button{
+  height: 80rpx;
+  margin: 30rpx;
+}

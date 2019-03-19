@@ -1,0 +1,293 @@
+/**index.wxss**/
+/*
+flex-wrap属性：定义换行情况
+1.nowrap（默认）：不换行
+2.wrap：换行，第一行在上方；
+3.wrap-reverse：换行，第一行在下方。
+*/
+.container{
+  background-color: #F2F2F2;
+  min-height: 100%;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+  搜索框的布局
+*/
+.search-view{
+  position: fixed; /*根据浏览器布局**/
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: gray;
+  display: flex;
+  z-index: 500;
+  flex-direction: column;
+}
+
+.search-content{
+  background: white;
+  width: 650rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-top: auto;
+  padding-left: 20rpx;
+  padding-bottom: auto;
+  margin: auto;
+  height: 70rpx;
+  border-radius: 5px 5px;
+}
+
+.search-icon{
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 20rpx;
+}
+
+.search-input{
+  width: 500rpx;
+  font-size: 28rpx;
+}
+
+.search-btn{
+  width: 150rpx;
+  height: 70rpx;
+  margin-right: 0rpx;
+  align-items: center;
+  background-color:blueviolet;
+  font-size: 28rpx;
+  position: relative;
+  border-top-left-radius: 0rpx;
+  border-bottom-left-radius: 0rpx;
+  color: white;
+  border: none;
+  margin-left: 10rpx;
+}
+
+/*
+  滚动视图的布局
+*/
+.swiper-container{
+  width: 750rpx;
+  position: relative;
+}
+
+.swiper-box{
+  width: 100%;
+  height: 562.5rpx;
+}
+
+.swiper-item image{
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height: 562.5rpx;
+}
+
+.swiper-container .dots{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-container .dots .dot{
+  margin: 0 8rpx;
+  width: 14rpx;
+  height: 14rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: all .6s;
+  opacity: .5;
+}
+
+.swiper-container .dots .dot.active{
+  width: 14rpx;
+  opacity: 1;
+  background-color: coral;
+}
+
+/**
+商品类别布局
+*/
+.type-container{
+  /*nowrap	文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。*/
+  white-space: nowrap;
+  width: 100%;
+  height: 88rpx;
+  background: #fff;
+}
+
+.type-navbar{
+  width: 100%;
+  height: 88rpx;
+}
+
+.type-box{
+  display: inline-block;
+  width: 150rpx;
+  box-sizing: content-box;
+  line-height: 84rpx;
+  text-align: center;
+  font-size: 25rpx;
+  overflow: hidden;
+}
+
+/*
+ 1、::-webkit-scrollbar   定义了滚动条整体的样式；
+ 2、::-webkit-scrollbar-thumb  滑块部分；
+ 3、::-webkit-scrollbar-track  轨道部分；
+ 隐藏滚动条  transparent:透明的
+*/
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.type-navbar-item{
+  border-bottom: 4rpx solid #fff;
+}
+
+.type-item-on{
+  border-bottom: 4rpx solid #e64340;
+}
+
+/*
+  公告
+*/
+.notice{
+  display: flex;/*将对象作为弹性伸缩盒显示*/
+  width: 750rpx;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  margin: 10rpx auto;
+}
+
+.notice_iteml{
+  align-items: center;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 50rpx;
+  padding: 15rpx 25rpx 15rpx;
+  height: 50rpx;
+}
+
+.notice_swiper{
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  width: 635rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.notice_itemr{
+  padding-left: 10rpx;
+  font-size: 26rpx;
+  color: #e64340;
+  line-height: 50rpx;
+  height: 50rpx;
+  width: 635rpx;
+  overflow: hidden;
+}
+
+/*优惠券*/
+.coupons{
+  margin-top: 10rpx;
+  width: 100%;
+  height: 180rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.coupons-scroll{
+  white-space: nowrap;
+  width: 100%;
+  height: 180rpx;
+}
+
+.coupons-item{
+  height: 180rpx;
+  width: 300rpx;
+  margin: 10rpx;
+  display: inline-block;
+  background-color: #ECA929;
+  color: white;
+  padding-top: 20rpx;
+  padding-left: 15rpx;
+  font-size: 20rpx;
+  line-height: 35rpx;
+  box-sizing: content-box;
+}
+
+/* 后代选择器的作用*/
+/* .coupons-item view{
+  font-size: 20rpx;
+   margin-left: 10rpx;
+   margin-top: 10rpx;
+} */
+
+/*商品信息布局* display: flex;自动填充 不需要设置宽度*/
+.goods-container{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+  padding: 24rpx;
+}
+
+.goods-box{
+  width: 339rpx;
+  height: 472rpx;
+  background-color: #fff;
+  margin-bottom: 24rpx;
+  overflow: hidden;
+}
+
+.img-box{
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+
+.img-box image{
+  width: 339rpx;
+  height: 339rpx;
+}
+
+.goods-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding:24rpx 0 0rpx 0;
+  color: #000;
+  margin-left: 24rpx;
+}
+
+.goods-price{
+  width: 280rpx;
+  color: #E4564E;
+  font-size: 24rpx;
+  padding-top: 15rpx;
+  padding: 24rpx 0;
+  margin-left: 24rpx
+}
+
+.no-more-goods{
+  color: #999;
+  padding-bottom: 40rpx;
+  text-align: center;
+  font-size: 25rpx;
+}

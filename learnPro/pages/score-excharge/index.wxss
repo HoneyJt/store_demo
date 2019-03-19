@@ -1,0 +1,52 @@
+/* pages/score-excharge/index.wxss */
+
+page{
+  height: 100%;
+  background-color: #f5f5f9;
+}
+
+.container{
+  justify-content: initial;
+}
+
+.form-box{
+  margin-top: 20rpx;
+  width: 100%;
+  background-color: #fff;
+}
+
+.row-wrap{
+  display: flex;
+  margin-left: 30rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  width: 720rpx;
+ 
+}
+
+.label{
+  width: 160rpx;
+  color: #000;
+}
+
+.label-right{
+  flex: 1;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.label-right input{
+  height: 100%;
+  padding-left: 30rpx;
+}
+
+.saveBtn,
+.cancelBtn{
+  margin-top: 30rpx;
+  border-radius: 6rpx;
+  text-align: center;
+  width: 670rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
