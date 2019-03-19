@@ -1,4 +1,7 @@
 // pages/score-excharge/index.js
+var wxpay = require('../../utils/pay.js')
+var app = getApp()
+var api = require('../../utils/request.js')
 Page({
 
   /**
@@ -68,6 +71,53 @@ Page({
    */
   cancelBtnTap:function(){
     wx.navigateBack({
+    })
+  },
+  /**
+   * 立即兑换
+   */
+  bindSave:function(e){
+    var that = this;
+    var amount = e.detail.value.amount;
+
+    if (amount == "") {
+      wx.showModal({
+        title: '错误',
+        content: '请填写正确的券号',
+        showCancel: false
+      })
+      return
+    }
+    api.fetchRequest('/score/exchange',{
+      token: wx.getStorageSync('token'),
+      number: amount
+    }).then(function(res){
+      if(res.data.code == 700){
+        wx.showModal({
+          title: '错误',
+          content: '券号不正确',
+          showCancel: false
+        })
+        return
+      }
+      if (res.data.code == 0) {
+        wx.showModal({
+          title: '成功',
+          content: '恭喜您，成功兑换 ' + res.data.data.score + ' 积分',
+          showCancel: false,
+          success: function (res) {
+            if (res.confirm) {
+              that.bindCancel();
+            }
+          }
+        })
+      } else {
+        wx.showModal({
+          title: '错误',
+          content: res.data.msg,
+          showCancel: false
+        })
+      }
     })
   }
 })
