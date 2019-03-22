@@ -1,1 +1,168 @@
 /* pages/order-list/index.wxss */
+.container{
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.status-box{
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.status-label{
+  width: 150rpx;
+  height: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color:#353535;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.status-label.active{
+  border-bottom: 6rpx solid #e64340;
+  color: #e64340;
+}
+
+.status-label .red-dot{
+  width: 16rpx;
+  height: 16rpx;
+  position: absolute;
+  left: 116rpx;
+  top: 23rpx;
+  background-color: #f43530;
+  border-radius: 50%;
+}
+
+.no-order{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 88rpx;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 203rpx;
+  background-color: #F2f2f2;
+}
+
+.no-order-img{
+  width: 81rpx;
+  height: 96rpx;
+  margin-bottom: 31rpx;
+}
+
+.no-order .text{
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+}
+
+.order-list{
+  width: 100%;
+}
+
+.a-order{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.order-date{
+  padding: 0 30rpx;
+  height: 88rpx;
+  display: flex;
+  font-size: 26rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-date .red{
+  font-size: 26rpx;
+  color: #e64340;
+}
+
+.goods-img-container .img-box .goods-img{
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.goods-img-container{
+    height: 180rpx;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.goods-info,
+.goods-img-container{
+   width: 720rpx;
+   margin-left: 30rpx;
+   border-top: 1rpx solid #eee;
+   border-bottom: 1rpx solid #eee;
+   padding: 30rpx 0;
+   display: flex;
+   align-items: center;
+}
+
+.goods-info .goods-des{
+  width: 540rpx;
+  height: 78rpx;
+  line-height: 39rpx;
+  font-size: 26rpx;
+  overflow: hidden;
+}
+
+.goods-img-container .img-box{
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+  display: inline-block;
+  background-color: #f7f7f7;
+}
+
+
+
+.price-box{
+  display: flex;
+  width: 720rpx;
+  height: 100rpx;
+  margin-left: 30rpx;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx 20rpx 0;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26rpx;
+  position: relative;
+}
+
+.total-price{
+  color: #e64340;
+}
+
+.btn{
+  width: 166rpx;
+  height: 60rpx;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 6rpx;
+  margin-left: 20rpx;
+}
+
+.cancel-btn{
+  border: 1rpx solid #ccc;
+  position: absolute;
+  right: 216rpx;
+  /* top:20rpx; */
+}
+
+.topay-btn{
+    border:1px solid #e64340;
+    color: #e64340;
+}

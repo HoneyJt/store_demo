@@ -34,13 +34,23 @@ Page({
    * 选中
    */
   selectTap:function(e){
-    console.log(e.currentTarget.dataset)
+    var id = e.currentTarget.dataset.id
+    api.fetchRequest('/user/shipping-address/update',{
+      token:wx.getStorageSync('token'),
+      id:id,
+      isDefault:'true'
+    }).then(function(res){
+      wx.navigateBack({
+      })
+    })
   },
   /**
    * 编辑收货地址
    */
   editAddress:function(e){
-    console.log(e.currentTarget.dataset)
+    wx.navigateTo({
+      url: "/pages/address-add/index?id=" + e.currentTarget.dataset.id,
+    })
   },
   /**
    * 新增收货地址
@@ -48,6 +58,25 @@ Page({
   addAddress:function(){
     wx.navigateTo({
       url:"/pages/address-add/index",
+    })
+  },
+  /**
+   * 获取收货地址
+   */
+  initShipingAddress:function(){
+    var that = this
+    api.fetchRequest("/user/shipping-address/list",{
+      token:wx.getStorageSync('token')
+    }).then(function(res){
+      if(res.data.code == 0){
+        that.setData({
+          addAddress:res.data.data
+        })
+      }else if(res.data.code == 700){
+        that.setData({
+          addressList:null
+        })
+      }
     })
   }
 })
