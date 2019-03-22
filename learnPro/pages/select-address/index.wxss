@@ -1,1 +1,89 @@
 /* pages/select-address/index.wxss */
+
+page{
+  background-color: #f2f2f2;
+}
+
+.container{
+  /* background-color: #f2f2f2; */
+  height: 100%;
+}
+
+.address-list{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding-bottom: 100rpx;
+}
+
+.a-address{
+  width: 720rpx;
+  background-color: #fff;
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #eee;
+}
+
+.left-text{
+  width: 610rpx;
+  box-sizing: border-box;
+  padding: 30rpx 0;
+}
+
+.left-text,.active{
+  background: url(https://cdn.it120.cc/images/weappshop/addr-active.png) no-repeat left center;
+  background-size: 28rpx auto;
+}
+
+.name-tel{
+  padding-left: 60rpx;
+  color: #000;
+  font-size: 32rpx;
+}
+
+.address-box{
+  padding-left: 60rpx;
+  color: #666;
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+
+.right-edit{
+  width: 109rpx;
+  height: 100%;
+  background: url(https://cdn.it120.cc/images/weappshop/addr-edit.png) no-repeat 43rpx center;
+  background-size: 30rpx auto;
+  box-sizing: border-box;
+  padding:50rpx 0 50rpx 58rpx;
+}
+
+.bottom-box{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 710rpx center;
+  background-size: 15rpx auto;
+  border-top: 1rpx solid #eee;
+  background-color: #fff;
+}
+
+.add-btn{
+  height: 100rpx;
+  line-height: 100rpx;
+  background: url(https://cdn.it120.cc/images/weappshop/add-addr.png) no-repeat left center;
+  background-size: 40rpx auto;
+  font-size: 28rpx;
+  margin-left: 30rpx;
+  padding-left: 70rpx;
+  color: #000;
+}
+
+/*
+(https://cdn.it120.cc/images/weappshop/addr-edit.png)
+(https://cdn.it120.cc/images/weappshop/arrow-right.png)
+(https://cdn.it120.cc/images/weappshop/add-addr.png)  */

@@ -1,11 +1,13 @@
 // pages/select-address/index.js
+const app = getApp()
+const api = require('../../utils/request.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    addressList: [{'id':1, 'linkMan': '啊哈哈哈', 'mobile': '18502567443', 'address': '江苏省南京市建邺区', 'isDefault': true }, {'id':2, 'linkMan': '啊哈哈哈', 'mobile': '18502567443', 'address': '江苏省南京市建邺区', 'isDefault': false }]
   },
 
   /**
@@ -26,41 +28,26 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+     
   },
-
   /**
-   * 生命周期函数--监听页面隐藏
+   * 选中
    */
-  onHide: function () {
-
+  selectTap:function(e){
+    console.log(e.currentTarget.dataset)
   },
-
   /**
-   * 生命周期函数--监听页面卸载
+   * 编辑收货地址
    */
-  onUnload: function () {
-
+  editAddress:function(e){
+    console.log(e.currentTarget.dataset)
   },
-
   /**
-   * 页面相关事件处理函数--监听用户下拉动作
+   * 新增收货地址
    */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  addAddress:function(){
+    wx.navigateTo({
+      url:"/pages/address-add/index",
+    })
   }
 })
